@@ -40,7 +40,7 @@ arr = np.arange(1, 11)
 
 print(arr > 5)
 
-print(arr[arr> 5])
+print(arr[arr > 5])
 
 arr_2d = np.arange(50).reshape(5, 10)
 

@@ -18,7 +18,7 @@ print(1/arr)
 
 print(arr**3)
 
-#squareroot
+# squareroot
 print(np.sqrt(arr))
 
 print(np.max(arr))
