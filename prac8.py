@@ -23,8 +23,8 @@ df3 = pd.DataFrame({
 }, index=[8, 9, 10, 11])
 
 print(df1)
-
 print(pd.concat([df1, df2, df3]))
+print(pd.concat([df1, df2, df3], axis=1))
 
 left = pd.DataFrame({
     'Key': ['K0', 'K1', 'K2', 'K3'],
@@ -42,7 +42,7 @@ print(left)
 print(right)
 
 print(pd.merge(left, right, how='inner', on='Key'))
-print(pd.concat([left, right]))
+print(pd.concat([left, right], sort=True))
 
 left = pd.DataFrame({
     'key1': ['K0', 'K0', 'K1', 'K2'],
